@@ -20,6 +20,8 @@ export default function DoodleWidget() {
     const ctx = canvas.getContext('2d');
     ctx.beginPath();
     ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = lineWidth;
     setIsDrawing(true);
   };
 
@@ -28,13 +30,13 @@ export default function DoodleWidget() {
     const canvas = canvasRef.current;
     const rect = canvas.getBoundingClientRect();
     const ctx = canvas.getContext('2d');
-    ctx.strokeStyle = color;
-    ctx.lineWidth = lineWidth;
     ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
     ctx.stroke();
   };
 
-  const stopDrawing = () => setIsDrawing(false);
+  const stopDrawing = () => {
+    setIsDrawing(false);
+  };
 
   const clearCanvas = () => {
     const canvas = canvasRef.current;
@@ -43,21 +45,22 @@ export default function DoodleWidget() {
   };
 
   return (
-    <div className="bg-neutral-900 border-2 border-neutral-700 rounded-xl p-4 flex flex-col gap-3 shadow-xl">
-      <div className="flex items-center justify-between">
-        <span className="text-xs font-mono text-neutral-400">Interactive Canvas Pad</span>
-        <div className="flex gap-2 items-center">
-          {['#EAB308', '#3B82F6', '#EF4444', '#FFFFFF'].map((c) => (
-            <button
-              key={c}
-              onClick={() => setColor(c)}
-              className="w-5 h-5 rounded-full border border-neutral-600 transition-transform hover:scale-110"
-              style={{ backgroundColor: c }}
-            />
-          ))}
+    <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+        <div>
+          <h3 className="text-xl font-bold text-neutral-100">Interactive Doodle Canvas</h3>
+          <p className="text-sm text-neutral-400">Leave a quick sketch or note before you leave!</p>
+        </div>
+        <div className="flex items-center gap-3">
+          <input
+            type="color"
+            value={color}
+            onChange={(e) => setColor(e.target.value)}
+            className="w-8 h-8 rounded border-0 bg-transparent cursor-pointer"
+          />
           <button
             onClick={clearCanvas}
-            className="ml-2 text-xs bg-neutral-800 hover:bg-neutral-700 text-neutral-300 px-2 py-1 rounded border border-neutral-600"
+            className="text-xs font-mono bg-neutral-800 hover:bg-neutral-700 text-neutral-200 px-3 py-1.5 rounded transition-colors"
           >
             Clear
           </button>
@@ -65,8 +68,8 @@ export default function DoodleWidget() {
       </div>
       <canvas
         ref={canvasRef}
-        width={340}
-        height={180}
+        width={700}
+        height={250}
         onMouseDown={startDrawing}
         onMouseMove={draw}
         onMouseUp={stopDrawing}
