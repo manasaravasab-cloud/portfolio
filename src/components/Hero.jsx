@@ -5,24 +5,20 @@ export default function Hero() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16">
       <div className="lg:col-span-7 flex flex-col gap-4">
-        {/* Updated Tagline */}
         <span className="text-xs font-mono tracking-widest text-yellow-400 uppercase">
           Manasa R T | CS Student &amp; Developer
         </span>
 
-        {/* Updated Main Heading */}
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-100 leading-tight">
           Building AI Vision Systems &amp; Cloud Architecture.
         </h1>
 
-        {/* Updated Bio Paragraph with Community & Tech Focus */}
         <p className="text-neutral-400 text-base leading-relaxed">
           Specializing in C++, Python, Cloud Run, and Generative AI applications. 
-          Core Organizer at GDG REVA &amp; OScode, leading tech hackathons (200+ hackers) 
-          and community developer initiatives.
+          GDG REVA Dev Team member and OScode PR Lead &amp; Technical Contributor, 
+          organizing developer hackathons (200+ hackers) and open-source initiatives.
         </p>
 
-        {/* Call to Action Links */}
         <div className="flex flex-wrap gap-4 mt-2">
           <a
             href="https://portfolio-acme-0459.vercel.app/"

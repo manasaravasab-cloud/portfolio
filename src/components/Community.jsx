@@ -3,25 +3,37 @@ import React from 'react';
 export default function Community() {
   return (
     <section id="community" className="mb-16">
-      <h2 className="text-2xl font-bold text-neutral-100 mb-6">
-        Community &amp; Leadership
-      </h2>
-      <div className="bg-neutral-900 border border-neutral-800 rounded-lg p-6">
-        <h3 className="text-lg font-semibold text-yellow-400">
-          Core Organizer — GDG REVA &amp; OScode
-        </h3>
-        <p className="text-sm text-neutral-400 mb-4">REVA University | 2025 – Present</p>
-        <ul className="list-disc list-inside text-neutral-300 space-y-2 text-sm leading-relaxed">
-          <li>
-            <strong className="text-neutral-100">REVA RIFT 24-Hour Hackathon:</strong> Managed corporate sponsorship outreach, logistics, and execution for 200+ hackers and 45+ competing teams.
-          </li>
-          <li>
-            <strong className="text-neutral-100">HACK.ALGO Hackathon:</strong> Co-led participant onboarding, community engagement, and promotional campaigns.
-          </li>
-          <li>
-            <strong className="text-neutral-100">Peer Workshops:</strong> Facilitated student technical bootcamps covering version control (Git/GitHub), C++ Data Structures, and open-source contributions.
-          </li>
-        </ul>
+      <h2 className="text-xl font-mono text-yellow-400 mb-6">Experience &amp; Community</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        {/* GDG REVA - Dev Team */}
+        <div className="bg-neutral-900/60 border border-neutral-800 rounded-xl p-6 flex flex-col justify-between hover:border-neutral-700 transition-colors">
+          <div>
+            <span className="text-xs font-mono text-neutral-500 uppercase">Engineering &amp; Tech</span>
+            <h3 className="text-lg font-bold text-neutral-100 mt-1">Dev Team Member — GDG REVA</h3>
+            <p className="text-xs font-mono text-neutral-500 mb-4">REVA University | 2025 – Present</p>
+            <ul className="list-disc list-inside text-neutral-300 space-y-2 text-sm leading-relaxed">
+              <li>Engineered web platforms and technical assets for campus developer workshops and community initiatives.</li>
+              <li>Collaborated on technical execution and developer onboarding for major club events like REVA RIFT (200+ hackers, 45+ teams).</li>
+              <li>Facilitated peer learning sessions covering Git/GitHub, version control, and open-source practices.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* OScode - PR & Marketing + Tech Contributor */}
+        <div className="bg-neutral-900/60 border border-neutral-800 rounded-xl p-6 flex flex-col justify-between hover:border-neutral-700 transition-colors">
+          <div>
+            <span className="text-xs font-mono text-neutral-500 uppercase">Outreach &amp; Cross-Functional</span>
+            <h3 className="text-lg font-bold text-neutral-100 mt-1">PR &amp; Marketing / Tech Contributor — OScode</h3>
+            <p className="text-xs font-mono text-neutral-500 mb-4">REVA University | 2025 – Present</p>
+            <ul className="list-disc list-inside text-neutral-300 space-y-2 text-sm leading-relaxed">
+              <li>Spearheaded public relations, promotional campaigns, and student engagement across campus developer networks.</li>
+              <li>Cross-collaborated with internal tech leads to assist in open-source repository maintenance and event technical setups.</li>
+              <li>Drove promotion and participant onboarding for open-source initiatives and developer hackathons.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
   );
