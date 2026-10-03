@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { Mail, ExternalLink, Code2, Terminal, Cpu } from 'lucide-react';
+import DoodleWidget from './components/DoodleWidget';
 
 export default function App() {
   return (
@@ -104,6 +105,11 @@ export default function App() {
               </span>
             ))}
           </div>
+        </section>
+
+        {/* Interactive Doodle Canvas */}
+        <section id="doodle" className="mb-20">
+          <DoodleWidget />
         </section>
 
         {/* Footer */}
