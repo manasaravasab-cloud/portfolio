@@ -53,6 +53,7 @@ export default function App() {
         </section>
 
         {/* Featured Projects Section */}
+    {/* Featured Projects Section */}
         <section id="projects" className="mb-20">
           <div className="flex items-center gap-2 mb-8">
             <Code2 className="text-yellow-400" size={20} />
@@ -60,17 +61,17 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Project Card 1 */}
+            {/* Project Card 1: AI Vision App (In Development) */}
             <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 flex flex-col justify-between hover:border-neutral-700 transition-colors">
               <div>
-                <div className="flex justify-between items-start mb-4">
+                <div className="flex justify-between items-start mb-3">
                   <h3 className="text-xl font-bold text-neutral-100">AI Vision Assistive App</h3>
-                  <a href="https://github.com/manasaravasab-cloud" target="_blank" rel="noreferrer" className="text-neutral-400 hover:text-yellow-400">
-                    <ExternalLink size={18} />
-                  </a>
+                  <span className="text-xs font-mono font-medium bg-yellow-400/10 text-yellow-400 border border-yellow-400/30 px-2.5 py-1 rounded-full">
+                    In Development
+                  </span>
                 </div>
                 <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
-                  Voice-activated vision assistance mobile platform built to help visually impaired individuals interpret real-time surrounding visuals via AI image labeling.
+                  Voice-activated vision assistance mobile application designed to help elderly and visually impaired individuals interpret surrounding visual information in real time. Currently refining multimodal AI models and Cloud Run integration.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-800/80">
@@ -80,17 +81,17 @@ export default function App() {
               </div>
             </div>
 
-            {/* Project Card 2 */}
+            {/* Project Card 2: Sentiment Analysis System Mini-Project */}
             <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 flex flex-col justify-between hover:border-neutral-700 transition-colors">
               <div>
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-neutral-100">Sentiment Analysis Engine</h3>
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-xl font-bold text-neutral-100">Sentiment Analysis System</h3>
                   <a href="https://github.com/manasaravasab-cloud" target="_blank" rel="noreferrer" className="text-neutral-400 hover:text-yellow-400">
                     <ExternalLink size={18} />
                   </a>
                 </div>
                 <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
-                  A multi-subsystem NLP pipeline designed with modular services for parsing textual data, analyzing user sentiment, and generating analytical reports.
+                  A modular 6-subsystem engineering project featuring complete UML architecture models, data parsing pipelines, and automated sentiment scoring logic for user feedback analysis.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-800/80">
@@ -101,6 +102,7 @@ export default function App() {
             </div>
           </div>
         </section>
+
 
         {/* Tech Stack & Focus Area Bento */}
         <section className="mb-20">
