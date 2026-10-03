@@ -81,27 +81,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Project Card 2: Sentiment Analysis System Mini-Project */}
-            <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 flex flex-col justify-between hover:border-neutral-700 transition-colors">
-              <div>
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-neutral-100">Sentiment Analysis System</h3>
-                  <a href="https://github.com/manasaravasab-cloud" target="_blank" rel="noreferrer" className="text-neutral-400 hover:text-yellow-400">
-                    <ExternalLink size={18} />
-                  </a>
-                </div>
-                <p className="text-neutral-400 text-sm mb-4 leading-relaxed">
-                  A modular 6-subsystem engineering project featuring complete UML architecture models, data parsing pipelines, and automated sentiment scoring logic for user feedback analysis.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-800/80">
-                <span className="text-xs font-mono bg-neutral-800 text-yellow-400 px-2.5 py-1 rounded">C++</span>
-                <span className="text-xs font-mono bg-neutral-800 text-neutral-300 px-2.5 py-1 rounded">Python</span>
-                <span className="text-xs font-mono bg-neutral-800 text-neutral-300 px-2.5 py-1 rounded">UML Architecture</span>
-              </div>
-            </div>
-          </div>
-        </section>
+            
 
 
         {/* Tech Stack & Focus Area Bento */}
