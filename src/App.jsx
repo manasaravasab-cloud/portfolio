@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code2, Terminal, Cpu } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { Mail, ExternalLink, Code2, Terminal, Cpu } from 'lucide-react';
 import DoodleWidget from './components/DoodleWidget';
 
 export default function App() {
@@ -14,10 +15,10 @@ export default function App() {
           </div>
           <div className="flex items-center gap-5 text-neutral-400">
             <a href="https://github.com/manasaravasab-cloud" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors">
-              <Github size={20} />
+              <FaGithub size={20} />
             </a>
             <a href="https://www.linkedin.com/in/Manasa R T" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors">
-              <Linkedin size={20} />
+              <FaLinkedin size={20} />
             </a>
             <a href="mailto:manasaravasab@gmail.com" className="hover:text-yellow-400 transition-colors">
               <Mail size={20} />
