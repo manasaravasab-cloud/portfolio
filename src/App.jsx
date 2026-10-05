@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import Community from './components/Community';
 import BentoGrid from './components/BentoGrid';
 import Writing from './components/Writing';
-import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -12,7 +11,11 @@ export default function App() {
       <Community />
       <BentoGrid />
       <Writing />
-      <Footer />
+      
+      {/* Inline Footer */}
+      <footer className="pt-8 border-t border-neutral-800 text-center text-xs font-mono text-neutral-500 mt-16">
+        © {new Date().getFullYear()} Manasa R T. Built with React &amp; Tailwind CSS.
+      </footer>
     </main>
   );
 }
