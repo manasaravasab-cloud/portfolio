@@ -14,7 +14,7 @@ export default function App() {
       
       {/* Inline Footer */}
       <footer className="pt-8 border-t border-neutral-800 text-center text-xs font-mono text-neutral-500 mt-16">
-        © {new Date().getFullYear()} Manasa R T. Built with React &amp; Tailwind CSS.
+        © {new Date().getFullYear()} Nova. Built with React &amp; Tailwind CSS.
       </footer>
     </main>
   );
