@@ -8,16 +8,13 @@ export default function Hero() {
       {/* Left Column: Name, Role, Contacts & Bio */}
       <div className="lg:col-span-6 flex flex-col gap-5">
         
-        {/* 1. Name & Highlighted Role */}
+        {/* 1. MANASA & Highlighted Role */}
         <div>
-          <h1 className="text-5xl md:text-6xl font-black tracking-tight text-neutral-100">
-            Nova
+          <h1 className="text-5xl md:text-6xl font-black tracking-tight text-neutral-100 uppercase">
+            MANASA
           </h1>
           <p className="text-xl md:text-2xl font-bold text-yellow-400 mt-2 tracking-wide font-mono">
             CS Student &amp; Developer
-          </p>
-          <p className="text-sm font-mono text-neutral-400 mt-1">
-            REVA University, Bangalore
           </p>
         </div>
 
