@@ -29,7 +29,7 @@ export default function BentoGrid() {
               3D Online Multiplayer Escape Room
             </p>
             <p className="text-neutral-400 text-sm mb-4 leading-relaxed font-serif">
-              A browser-based co-op escape room featuring asymmetric information puzzles that enforce real-time team communication. Includes procedural audio generation and pathfinding AI (BFS/A*) for dynamic chaser mechanics.
+              A browser-based co-op escape room featuring asymmetric information puzzles that enforce real-time team communication[cite: 8]. Includes procedural audio generation and pathfinding AI (BFS/A*) for dynamic chaser mechanics[cite: 8].
             </p>
           </div>
           <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-800/80 font-sans">
@@ -55,7 +55,7 @@ export default function BentoGrid() {
               Voice-First Assistive Engine
             </p>
             <p className="text-neutral-400 text-sm mb-4 leading-relaxed font-serif">
-              A visual assistant designed for elders and low-vision users. Parses physical objects and medicine labels in real time through mobile camera feeds, returning immediate spoken answers with safety verification safeguards.
+              A visual assistant designed for elders and low-vision users[cite: 9]. Parses physical objects and medicine labels in real time through mobile camera feeds, returning immediate spoken answers with safety verification safeguards[cite: 9].
             </p>
           </div>
           <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-800/80 font-sans">
@@ -81,7 +81,7 @@ export default function BentoGrid() {
               Event Directory &amp; Escrow Marketplace
             </p>
             <p className="text-neutral-400 text-sm mb-4 leading-relaxed font-serif">
-              A marketplace platform connecting customers with verified event organizers across Bangalore. Implements direct quote requests, deposit holding logic, and split-settlement payment workflows.
+              A marketplace platform connecting customers with verified event organizers across Bangalore[cite: 10]. Implements direct quote requests, deposit holding logic, and split-settlement payment workflows[cite: 10].
             </p>
           </div>
           <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-800/80 font-sans">
@@ -92,7 +92,7 @@ export default function BentoGrid() {
           </div>
         </div>
 
-        {/* Project 4: Zoyo */}
+        {/* Project 4: Zoyo — Updated Blueprint */}
         <div className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-6 flex flex-col justify-between hover:border-amber-400/50 transition-all duration-300">
           <div>
             <div className="flex justify-between items-start mb-3 gap-2">
@@ -104,17 +104,17 @@ export default function BentoGrid() {
               </span>
             </div>
             <p className="text-xs font-sans tracking-widest uppercase text-amber-500 mb-3">
-              Cinema Experience Discovery Engine
+              Concert &amp; Event Ticketing Platform
             </p>
             <p className="text-neutral-400 text-sm mb-4 leading-relaxed font-serif">
-              A discovery web application that ranks theater halls by real experience metrics (audio systems, seating quality, screen specs) with spatial distance queries and affiliate booking deep links.
+              A trusted ticketing website for small-to-midsize city events[cite: 12]. Replaces scattered DM/UPI booking methods with integrated checkout, automated webhook verification, uniquely signed QR tickets, and organizer payouts[cite: 12].
             </p>
           </div>
           <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-800/80 font-sans">
             <span className="text-xs tracking-wider uppercase bg-neutral-800 text-amber-400 px-2.5 py-1 rounded-md">Next.js</span>
             <span className="text-xs tracking-wider uppercase bg-neutral-800 text-neutral-300 px-2.5 py-1 rounded-md">FastAPI</span>
-            <span className="text-xs tracking-wider uppercase bg-neutral-800 text-neutral-300 px-2.5 py-1 rounded-md">PostGIS</span>
-            <span className="text-xs tracking-wider uppercase bg-neutral-800 text-neutral-300 px-2.5 py-1 rounded-md">Google Places API</span>
+            <span className="text-xs tracking-wider uppercase bg-neutral-800 text-neutral-300 px-2.5 py-1 rounded-md">PostgreSQL</span>
+            <span className="text-xs tracking-wider uppercase bg-neutral-800 text-neutral-300 px-2.5 py-1 rounded-md">Payment Gateways</span>
           </div>
         </div>
 
